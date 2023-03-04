@@ -9,6 +9,9 @@ set (FAT_FS_SOURCES
 set_source_files_properties(${FAT_FS_SOURCES} PROPERTIES COMPILE_FLAGS
     "-Wno-strict-aliasing ${LIBS_FLAGS}" )
 
+# MinIni stuff
+add_definitions(-DPORTABLE_STRNICMP)
+
 set (MININI_SOURCES
     minIni/minIni.c
 )

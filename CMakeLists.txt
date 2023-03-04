@@ -4,6 +4,8 @@ if(NOT PLATFORM STREQUAL "SIMULATOR")
   include(gnu_toolchain.cmake)
 endif()
 
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
+
 PROJECT(walkgeek C ASM)
 
 include(flags.cmake)
